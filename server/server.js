@@ -14,10 +14,10 @@ app.use(cookieParser());
 app.use(express.json());
 
 //route
-app.use("/flood2020", Layers.flood2020);
-app.use("/flood2019", Layers.flood2019);
-app.use("/flood2018", Layers.flood2018);
-app.use("/flood2017", Layers.flood2017);
+app.use("/flood_y2020", Layers.flood2020);
+app.use("/flood_y2019", Layers.flood2019);
+app.use("/flood_y2018", Layers.flood2018);
+app.use("/flood_y2017", Layers.flood2017);
 
 app.get("/", async (req, res) => {
   res.send("Hello world");
